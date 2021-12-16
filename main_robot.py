@@ -10,9 +10,9 @@ def goal_pose_object(X=213.3,Y=0,Z=229):
     print("GOING TO POSITION")
 
 def move_belt(direction):
-    move_belt(direction)
+    robot.move_belt(direction)
     print(f"RUNNING BELT on {direction} direction")
 
 def turn_servo_eff(ang=0):
-    turn_servo(ang)
+    robot.turn_servo(ang)
     print(f"TURNING SERVO TO {ang}")
