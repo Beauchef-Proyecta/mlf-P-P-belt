@@ -14,5 +14,13 @@ def move_belt(direction):
     print(f"RUNNING BELT on {direction} direction")
 
 def turn_servo_eff(ang=0):
-    robot.turn_servo(ang)
+    robot.turn_servo_eff(ang)
     print(f"TURNING SERVO TO {ang}")
+
+def grab_object(status=0):
+    if status:
+        robot.electro_status(1)
+        print("ACTIVANDO GRIPPER")
+    else:
+        robot.electro_status(0)
+        print("DESACTIVANDO GRIPPER")
