@@ -3,7 +3,7 @@ import sys
 sys.path.append('/home/pi/mlf/api')
 from robot_control import RobotController
 
-robot = RobotController
+robot = RobotController()
 
 def goal_pose_object(X=213.3,Y=0,Z=229):
     robot.set_position_xyz(X,Y,Z)
